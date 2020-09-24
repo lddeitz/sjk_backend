@@ -17,7 +17,7 @@ users = User.create!([
   city: "Chicago",
   country: "United States",
   profile_picture: "https://pbs.twimg.com/media/Dyg-PPzXcAAY5Wv.jpg",
-  is_admin: FALSE,
+  is_admin: false,
   profile_url: ""
   },
   {
@@ -30,9 +30,9 @@ users = User.create!([
     city: "NYC",
     country: "United States",
     profile_picture: "https://vignette.wikia.nocookie.net/p__/images/7/79/Paul_Blart.png/revision/latest/top-crop/width/360/height/450?cb=20181105183248&path-prefix=protagonist",
-    is_admin: FALSE,
+    is_admin: false,
     profile_url: ""
-    },
+  },
   {
     first_name: "Luu",
     last_name: "Dee",
@@ -43,10 +43,9 @@ users = User.create!([
     city: "901",
     country: "United States",
     profile_picture: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NTI2OTA4NzY5MjE2MTI4/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
-    is_admin: TRUE,
+    is_admin: true,
     profile_url: ""
-  },
-
+  }
 ])
 
 songs = Song.create!([
@@ -76,39 +75,18 @@ songs = Song.create!([
     url: "https://soundcloud.com/morecreativityrecords/krma-archive-mcr",
     img_url: "https://i.ibb.co/cgjqGVh/Screen-Shot-2020-07-11-at-12-53-10-PM.png",
     total_versions: 0
-  },
+  }
 ])
 
-comments = Comment.create!([
-  {
+
+comments = Comment.create!({
     song_id: 1,
     author: "",
     notes: "this could be a lot louder",
     song_timestamp: "2:23",
     user_id: 1
-  },
-  {
-    song_id: 2,
-    author: "",
-    notes: "step reverb down a lil",
-    song_timestamp: "1:02-1:32",
-    user_id: 2
   }
-  {
-    song_id: 3,
-    author: "",
-    notes: "cool",
-    song_timestamp: ":23",
-    user_id: 3
-  }
-  {
-    song_id: 3,
-    author: "",
-    notes: "thats not loud enough",
-    song_timestamp: "0:20-1:30",
-    user_id: 3
-  }
-])
+)
 
 tags = Tag.create!([
   {

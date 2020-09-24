@@ -2,11 +2,11 @@ class CreateSongs < ActiveRecord::Migration[6.0]
   def change
     create_table :songs do |t|
       t.integer :user_id
-      t.string :title
+      t.text :title
       t.text :description
-      t.string :keywords
-      t.string :url
-      t.string :img_url
+      t.text :keywords
+      t.text :url
+      t.text :img_url
       t.integer :total_versions
       
       t.timestamps

@@ -3,7 +3,7 @@ class CreateUserRelationships < ActiveRecord::Migration[6.0]
     create_table :user_relationships do |t|
       t.integer :requester
       t.integer :recipient
-      t.string :type
+      t.text :type
 
       t.timestamps
     end
